@@ -21,28 +21,40 @@
 11. This function will return the array of discounted prices. In this case, the function will return `[50, 100, 150]` as `prices` is `[100, 200, 300]` and the `discount` is `0.5`. Although `discounted` is declared with `const`, which means that `discounted` can't be reassigned with another value, the value within `discounted` can still be updated, so `discounted.push(discountedPrice)` doesn't cause an error as it only updates the value, rather than reassign.
 
 12. 
-A. `student.name`
-B. `student['Grad Year']`
-C. `student.greeting`
-D. `student['Favorite Teacher].name`
-E. `student.courseLoad[0]`
+A. `student.name`  
+B. `student['Grad Year']`  
+C. `student.greeting`  
+D. `student['Favorite Teacher].name`  
+E. `student.courseLoad[0]`  
 
 13. 
-A. `'32'` because integers map to their exact string representations
-B. `1` because strings are automatically converted to numbers in mathematical expressions
-C. `3` because null maps to 0 in numeric conversion
-D. `'3null'` because null becomes "null" when being concatanated with a string
-E. `4` because true maps to 1 in numeric conversion
-F. `0` because false maps to 0 and null maps to 0 in numeric conversion
-G. `'3undefined'` because undefined becomes "undefined" when being concatanated with a string
-H. `NaN` because undefined maps to NaN in numeric conversion
+A. `'32'` because integers map to their exact string representations  
+B. `1` because strings are automatically converted to numbers in mathematical expressions  
+C. `3` because null maps to 0 in numeric conversion  
+D. `'3null'` because null becomes "null" when being concatanated with a string  
+E. `4` because true maps to 1 in numeric conversion  
+F. `0` because false maps to 0 and null maps to 0 in numeric conversion  
+G. `'3undefined'` because undefined becomes "undefined" when being concatanated with a string  
+H. `NaN` because undefined maps to NaN in numeric conversion  
 
 14. 
-A. `true` because string '2' becomes a number 2
-B. `false` because string '2' has higher dictionary order than '12'
-C. `true` because string '2' becomes a number 2
-D. `false` because number 2 and string '2' are not the same thing, as === is strict equality operator and there's no type conversion
-E. `false` because boolean true becomes a number 1
-F. `true` because Boolean(2) explicitly converts number 2 to a boolean true
+A. `true` because string '2' becomes a number 2  
+B. `false` because string '2' has higher dictionary order than '12'  
+C. `true` because string '2' becomes a number 2  
+D. `false` because number 2 and string '2' are not the same thing, as === is strict equality operator and there's no type conversion  
+E. `false` because boolean true becomes a number 1  
+F. `true` because Boolean(2) explicitly converts number 2 to a boolean true  
 
 15. The == operator checks the equality after automatic type conversion, while === operator checks the equality without type conversion. In other words, with the == operator, two different types could still return true. Whereas, with the === operator, two different types would return false unless the values are explicitly converted to the same type.
+
+16. Answer can be found in part2-question16.js
+
+17. This function will return the array with all the values inside of it doubled. In this case, the function will return `[2, 4, 6]` as `array` was `[1, 2, 3]`. This is because for each value in `array`, the function `doSomething` is called on it (which doubles the input) and the result is pushed into `newArr`. Essentially, each value is updated to itself but doubled in this `newArr`, which is what the function returns.
+
+18. Answer can be found in part2-question18.js
+
+19. 
+`1`  
+`4`  
+`3`  
+`2`
